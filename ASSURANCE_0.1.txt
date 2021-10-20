@@ -1,0 +1,31 @@
+																PROGRAMME ASSURANCE_0.1
+const B=1000000
+var risq,util:chaine de caracteres
+ pui         :entier
+ prim		  :reel
+ DEBUT
+	afficher "entrer type de risque"
+	saisir risq
+	si(risq="tierce collision")
+		alors prim=B
+		sinon prim=B*1.5
+	Fsi
+	afficher "entrer le type de  puissance"
+	saisir pui
+	si(pui>=9)
+		alors prim=prim*1.4
+	 sinon si(pui<6)
+			alors prim=prim*1
+			sinon prim=prim*1.2
+		   Fsi
+	Fsi
+  afficher"entrer le type d utilisation"
+  si(util="promenade")
+	alors prim=prim*0.90
+	sinon si(util="trajet")
+			alors prim=prim*1.10
+			sinon prim=prim*1.25
+		  Fsi	  
+  Fsi
+  afficher"le montant de la prime est",prim
+ FIN

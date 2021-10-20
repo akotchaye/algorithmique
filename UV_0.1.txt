@@ -1,0 +1,30 @@
+														PROGRAMME UV_0.1
+var Dev,Exam:reels
+i,m,n :entier
+
+DEBUT
+ cpt=0
+  pour i= 1 à 2
+   afficher"entrer le nombre de matiere contenu dans l'uv",i
+   saisir n
+	 pour i= 1 à n
+	  afficher"entrer la note de devoir"
+	  saisir Dev
+	  Dev=Dev*0.4
+	  afficher" entrer la note d'examen"
+	  saisir exam
+	  exam=exam*0.6
+	  note=Dev+exam
+		 si(note<=7)
+		 alors cpt=cpt+1
+		 Fsi
+	 Fpour
+	Fpour
+	      si(cpt>=1)
+		   alors afficher"ECHOUE"
+		   sinon
+		   afficher "ADMIS"
+		  Fsi
+       	
+		
+Fin		 

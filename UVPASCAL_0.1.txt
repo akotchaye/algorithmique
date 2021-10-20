@@ -1,0 +1,30 @@
+	PROGRAM UV_0.1;
+var Dev,Exam:real;
+i,m,n :integer;
+
+begin
+ cpt=0
+  for i:= 1 to 2 do
+   writeln("entrer le nombre de matiere contenu dans l'uv",i)
+   readln("n")
+	 for i:= 1 to n do
+	  writeln("entrer la note de devoir")
+	  readln Dev
+	  Dev=Dev*0.4
+	  writeln (" entrer la note d'examen")
+	  readln ("exam")
+	  exam=exam*0.6
+	  note=Dev+exam
+		 if(note<=7)
+		 then cpt=cpt+1;
+		 ;
+		 ;
+	 Fpour
+	Fpour
+	      if(cpt>=1)
+		  then writeln("ECHOUE")
+		  else writeln ("ADMIS");
+
+       	
+		
+end.		 

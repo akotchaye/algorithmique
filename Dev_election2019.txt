@@ -1,0 +1,42 @@
+programme election
+const M=2000
+var Tlieu(M),Tjour(M),Tmois(M),Tsexe(M),Tnom(M):tableaux de chaines de caracteres
+TnumB(M),TNcarte(M),Tan(M):tableaux d'entiers
+code :chaine de caracteres 
+Num,n,i:entier
+DEBUT
+ afficher("entrer le nombre d'electeur)
+ saisir N
+ M=N
+ afficher("entrer le numero du bureau de vote")
+ saisir Num
+ code="BUREAU DE VOTE N°"//num
+ POUR i=1 a M 
+    afficher("entrer le numero de carte")
+	saisir TNcarte(i)
+	afficher("enter le nom")
+	saisir TNom(i)
+	afficher"entrer prenom"
+	saisir Tprenom(i)
+	TNom(i)=TNom(i)//-//Tprenom(i)
+	afficher entrer lieu de naissance 
+	saisir Tlieu(i)
+	afficher("entrer le sexe")
+	saisir Tsexe(i)
+	afficher("entrer jour de naissance")
+	saisir Tjour(i)
+	afficher ("entrer mois de naissance")
+	saisir Tmois(i)
+	afficher ("saisir annee de naissance")
+	saisir Tan(i)
+	Tjour(i)=Tjour(i)//-//Tmois(i)//-//Tan(i)
+	Tan(i)=2018-Tan(i)
+	SI (Tan(i)<18)
+	 alors 
+	 afficher(Tnom(i) Tprenom(i) Tan(i)//"ans","n'a pas l'age de voter") 
+	FSI
+ FPOUR
+FIN
+
+
+ 
